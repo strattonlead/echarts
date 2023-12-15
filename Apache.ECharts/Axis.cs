@@ -1,4 +1,4 @@
-﻿namespace Apache.ECharts
+﻿namespace CreateIf.Apache.ECharts
 {
     public abstract class Axis : BaseChartObject
     {
