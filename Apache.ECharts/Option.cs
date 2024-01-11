@@ -24,7 +24,7 @@ namespace CreateIf.Apache.ECharts
         public Tooltip Tooltip { get; set; }
 
         [JsonProperty(PropertyName = "toolbox", NullValueHandling = NullValueHandling.Ignore)]
-        public Tooltip Toolbox { get; set; }
+        public Toolbox Toolbox { get; set; }
 
         [JsonProperty(PropertyName = "series")]
         public Series[] Series { get; set; }
