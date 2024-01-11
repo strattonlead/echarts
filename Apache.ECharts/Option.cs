@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json;
+﻿using Apache.ECharts;
+using Newtonsoft.Json;
 
 namespace CreateIf.Apache.ECharts
 {
@@ -18,6 +19,12 @@ namespace CreateIf.Apache.ECharts
 
         [JsonProperty(PropertyName = "yAxis")]
         public Axis YAxis { get; set; }
+
+        [JsonProperty(PropertyName = "tooltip", NullValueHandling = NullValueHandling.Ignore)]
+        public Tooltip Tooltip { get; set; }
+
+        [JsonProperty(PropertyName = "toolbox", NullValueHandling = NullValueHandling.Ignore)]
+        public Tooltip Toolbox { get; set; }
 
         [JsonProperty(PropertyName = "series")]
         public Series[] Series { get; set; }
